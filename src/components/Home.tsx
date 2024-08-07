@@ -8,18 +8,25 @@ const Home = () => {
 
   return (
     <div className="Home">
-      Welcome! Enter a user id to see their profile
+      <h2>Welcome! Enter a User ID to view their profile</h2>
       <form
+        className="form"
         onSubmit={(e) => {
           e.preventDefault();
-          navigate(`/user/${userInput}`);
+          if (userInput !== "") {
+            navigate(`/user/${userInput}`);
+          } else {
+            navigate(`/`);
+          }
         }}
       >
-        <label htmlFor="user-input">Enter a user id between 1-10</label>
+        <label htmlFor="user-input">Enter a number between 1-10</label>
         <input
           id="user-input"
           type="string"
-          onChange={(e) => setUserInput(e.target.value)}
+          onChange={(e) => {
+            setUserInput(e.target.value);
+          }}
         ></input>
         <button type="submit">Get user profile</button>
       </form>
