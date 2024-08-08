@@ -1,5 +1,5 @@
 .post {
-  background-color: rgb(198, 160, 244);
+  background-color: rgb(246, 245, 248);
   color: black;
   font-weight: bold;
   padding: 5px;
@@ -9,11 +9,13 @@
 }
 
 .post h3 {
-  background-color: black;
+  background-color: wheat;
   width: fit-content;
   margin: 20px auto;
-  padding: 5px;
-  color: white;
+  padding: 8px 20px 8px 20px;
+  color: rgb(10, 10, 6);
+  border-radius: 15px;
+  border: 0.5px solid black;
 }
 
 .post p {

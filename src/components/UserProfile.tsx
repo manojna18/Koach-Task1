@@ -25,7 +25,9 @@ const UserProfile = () => {
     <>
       <Link to="/">
         <p>
-          <i className="material-icons">home</i>
+          <div className="w3-xxlarge">
+            <i className="material-icons  w3-xxlarge">home</i>
+          </div>
         </p>
       </Link>
       {loading && <p>Data loading...</p>}
